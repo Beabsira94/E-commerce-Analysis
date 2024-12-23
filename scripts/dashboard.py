@@ -3,10 +3,10 @@ import pandas as pd
 import plotly.express as px
 
 # Load datasets
-final_df = pd.read_csv('../data/final_dataset.csv')
-monthly_df = pd.read_csv('../data/monthly_aggregation.csv')
-weekly_df = pd.read_csv('../data/weekly_aggregation.csv')
-daily_df = pd.read_csv('../data/daily_aggregation.csv')
+final_df = pd.read_csv('/data/final_dataset.csv')
+monthly_df = pd.read_csv('/data/monthly_aggregation.csv')
+weekly_df = pd.read_csv('/data/weekly_aggregation.csv')
+daily_df = pd.read_csv('/data/daily_aggregation.csv')
 
 # Convert 'InvoiceDate' to datetime format based on the specific format for each dataset
 final_df['InvoiceDate'] = pd.to_datetime(final_df['InvoiceDate'], errors='coerce', format='%m/%d/%Y')  # Example: '1/6/2011'
